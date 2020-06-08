@@ -22,7 +22,11 @@ def get_geocode(address):
 
 ### Map all Starbucks locations in the California Area
 Just to get an idea of the distribution of locations, I've mapped them below. There are a total of 2821 locations.
-![AllLocations](/images/m2.png)
+**See interactive map [here](maps/m_2.html)**
+
+
+<img src="/images/m2.png" width="500">
+
 
 ## Identify Promising Counties
 Promising counties were identified based on the following criteria:
@@ -41,8 +45,10 @@ Next the stores that fall within these counties were identified.
 <br>
 To do this the **.sjoin()** method was used with a 'within' operation 
 Example of locations that fall within the Los Angeles County
+<br>
+**See interactive map [here](maps/m_3.html)**
 
-![Locations in Los Angeles](/images/m2.png)
+<img src="/images/m3.png" width="500">
 
 ## Narrow down based on nearby Locations
 
@@ -54,7 +60,10 @@ To do this we create a buffer around each store location and see how many stores
 Had to change the CRS for this. The folium maps use epsg=4326, but for distance measuring in meters used epsg=3857
 
 #### Subset of buffers
-![Subset of Buffers](/images/m3.png)
+<br>
+**See interactive map [here](maps/m_4.html)**
+
+<img src="/images/m4.png" width="500">
 
 By avoiding locations that had no neighbours and more than 3 locations in a 1km radius, I narrowed down the list
 

@@ -39,7 +39,7 @@ The population density was calculated by dividing the population by the area in 
 The identified most suitable counties out of the 58 counties were: 
 ![selectedCounties](/images/sel_counties.png)
 
-### Identify promising stores ( .sjoin() )
+### Spatial Joins - Identify promising stores ( .sjoin() )
 
 Next the stores that fall within these counties were identified.
 <br>
@@ -50,7 +50,7 @@ Example of locations that fall within the Los Angeles County
 
 <img src="/images/m3.png" width="500">
 
-## Narrow down based on nearby Locations ( buffer )
+## Buffer - Narrow down based on nearby Locations
 
 Since there are a lot of possible stores we want to narrow things down. When upgrading to a Reserve Roastery, we want to avoid having regular starbucks locations nearby. This criteria can be used to narrow down our choices.
 

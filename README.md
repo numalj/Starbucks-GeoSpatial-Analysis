@@ -68,7 +68,6 @@ Had to change the CRS for this. The folium maps use epsg=4326, but for distance 
 By avoiding locations that had no neighbours and more than 3 locations in a 1km radius, I narrowed down the list
 
 ## Conclusion
-Further analysis can be done to pick ideal locations, for example rank locations based on population density and income.
 
 Based on the above analysis I have identified a list of store locations that are in regions of
 
@@ -76,3 +75,5 @@ Based on the above analysis I have identified a list of store locations that are
 * Low median age (median age < 38.5 years)
 * Population Density > 285 people/sqkm
 * Locations that only had more than 1 but less than 3 other Starbucks in the vicinity of 2km
+
+Further analysis can be done to pick ideal locations, for example rank locations based on population density and income.

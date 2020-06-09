@@ -1,6 +1,6 @@
 # Starbucks Ideal Store location - GeoSpatial Analysis
 
-In this project I used **geoPandas** and **geoDataFrames** along with **joins** and **buffers** to figure out the best Starbucks locations in the California area to upgrade to Reserve Roastery.
+In this project I used **GeoPandas** and **GeoDataFrames** along with **Spatial Joins** and **Buffers** to figure out the best Starbucks locations in the California area to upgrade to Reserve Roastery.
 
 Data: A combination of Location and Demographic data was used in the analysis.
 

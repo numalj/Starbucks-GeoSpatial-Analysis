@@ -6,11 +6,11 @@ Data: A combination of Location and Demographic data was used in the analysis.
 
 The full jupyter notebook can be viewed [here](https://github.com/numalj/Starbucks-GeoSpatial-Analysis/blob/master/StarbucksRoasteryLocation.ipynb)
 
-# Introduction
+## Introduction
 
 Starbucks are looking to find the next store to turn into a Starbucks Reserve Roastery. These roasteries are much larger than a typical Starbucks store and have several additional features, including various food and wine options, along with upscale lounge areas. You'll investigate the demographics of various counties in the state of California, to determine potentially suitable locations.
 
-# Data Cleaning
+## Data Cleaning
 
 5 store locations were identified with missing Longitude/Latitude coordinates. These were filled in by doing a geocode lookup using the address. The **OpenStreetMap Nominatim geocoder** was used.
 
@@ -28,7 +28,7 @@ Just to get an idea of the distribution of locations, I've mapped them below. Th
 <img src="/images/m2.png" width="500">
 
 
-### Identify Promising Counties
+## Identify Promising Counties
 Promising counties were identified based on the following criteria:
 * High median income (median income > $100,000)
 * Low median age (median age < 38.5 years)

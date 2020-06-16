@@ -6,11 +6,11 @@ Data: A combination of Location and Demographic data was used in the analysis.
 
 The full jupyter notebook can be viewed [here](https://github.com/numalj/Starbucks-GeoSpatial-Analysis/blob/master/StarbucksRoasteryLocation.ipynb)
 
-## Introduction
+## 1) Introduction
 
 Starbucks are looking to find the next store to turn into a Starbucks Reserve Roastery. These roasteries are much larger than a typical Starbucks store and have several additional features, including various food and wine options, along with upscale lounge areas. You'll investigate the demographics of various counties in the state of California, to determine potentially suitable locations.
 
-## Data Cleaning
+## 2) Data Cleaning
 
 5 store locations were identified with missing Longitude/Latitude coordinates. These were filled in by doing a geocode lookup using the address. The **OpenStreetMap Nominatim geocoder** was used.
 
@@ -28,7 +28,7 @@ Just to get an idea of the distribution of locations, I've mapped them below. Th
 <img src="/images/m2.png" width="500">
 
 
-## Identify Promising Counties
+## 3) Identify Promising Counties
 Promising counties were identified based on the following criteria:
 * High median income (median income > $100,000)
 * Low median age (median age < 38.5 years)
@@ -50,7 +50,7 @@ Example of locations that fall within the Los Angeles County
 
 <img src="/images/m3.png" width="500">
 
-## Buffer - Narrow down based on nearby Locations
+## 4) Buffer - Narrow down further based on nearby Locations
 
 Since there are a lot of possible stores we want to narrow things down. When upgrading to a Reserve Roastery, we want to avoid having regular starbucks locations nearby. This criteria can be used to narrow down our choices.
 
@@ -67,7 +67,7 @@ Had to change the CRS for this. The folium maps use epsg=4326, but for distance 
 
 By avoiding locations that had no neighbours and more than 3 locations in a 1km radius, I narrowed down the list
 
-## Conclusion
+## 5) Conclusion
 
 Based on the above analysis I have identified a list of store locations that are in regions of
 
